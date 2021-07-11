@@ -1,38 +1,73 @@
-.App {
+.home {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background: linear-gradient(158deg,#465666,#172129);
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+*{
+  font-family: AntarcticaBeta,sans-serif!important;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.counter{
+  color: #fff;
+}
+.title-name{
+  opacity: 1;
+  line-height: 1.4em;
+  color: #f1bba7;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-variation-settings: "wght" 800,"wdth" 160,"CNTR" 1;
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 150px;
+}
+.button{
+  margin-top: 10px;
+    color: #000;
+    background: #26323d;
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    margin-right: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.button:hover{
+  background-color: #fff;
+  color: #26323d;
+  transition: 1s;
+}
+.button::after{
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 2px solid #fff;
+}
+.button-name{
+  width: 100%;
+    height: 100%;
+    display: block;
+    padding: 2px 30px 0 30px;
+    line-height: 50px;
+    box-sizing: border-box;
+}
+.google-map{
+  text-align: center;
+}
+.location{
+  text-align: center;
 }
